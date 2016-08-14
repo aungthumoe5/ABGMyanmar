@@ -3,7 +3,7 @@
   <head>    
     <!--  meta -->
     <meta charset="utf-8">
-    <title>ABG Group</title>
+    <title>AGB Group | About Us</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -12,41 +12,6 @@
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/default.css" rel="stylesheet" media="screen">
     <style>
-    .slideshow
-    {
-    margin-left:0px;
-    }
-
-    .slideshow img
-    {
-    width:940px;
-    height:500px;
-    position:absolute;
-    top:0%;
-    left:0%;
-    }
-    
-    .slideshow img:nth-child(1)
-    {
-    z-index:-1;
-    }
-    .slideshow img:nth-child(2)
-    {
-    z-index:-2;
-    }
-    .slideshow img:nth-child(3)
-    {
-    z-index:-3;
-    }
-
-    .aboveslideshow
-    {
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-    padding: 20px;
-    color: white;
-    }
     </style>
     
     <!-- responsive -->
@@ -84,28 +49,47 @@
       <!-- navbar -->
       <div class="row">
         <ul class="nav nav-tabs pull-right">
-          <li class="active">
-            <a href="./index.html">Home</a>
-          </li>
+          <li><a href="./index.html">Home</a></li>
           <li><a href="./about.html">About Us</a></li>
           <li><a href="./products.html">Products and Services</a></li>
           <li><a href="./investor.html">Grow with Us</a></li>
-          <li><a href="./contact.html">Contact Us</a></li>
+          <li class="active"><a href="./contact.html">Contact Us</a></li>
         </ul>
       </div>
     
       <!-- content -->
       <div class="content">
-        <div class="aboveslideshow carousel-caption">
-            <h1>Welcome to ABG Group's Website</h1>
-            <p>ABG is  a private group of Agricultural, Fishery and Livestock businesses in Myanmar. We are constantly trying our best to provide our products and services to our customers, as well as to maintain the best relationship with investors, partners and associates.</p>
-            <br/>
-            <p><a class="btn btn-primary btn-large" href="./about.html">Learn More About Us &raquo;</a></p>
-        </div>
-        <div class="slideshow">
-          <img src="img/photo1.jpg">
-          <img src="img/photo2.jpg">
-          <img src="img/photo3.jpg">
+        <h1>Contact Us</h1>
+        
+        <hr/>
+        <div class="row">
+          <div class="span6">
+            <h3>Sales of Rice</h3>
+            <address>
+              <strong>Thongwa Shwe Wah Myay Co. Ltd</strong><br>
+              34, Si Thu Road, 11th Quarter<br>
+              Thongwa Township, Yangon Division, Myanmar<br>
+              <a href="mailto:#">sales@abg-group.com</a>
+            </address>
+          </div>
+          <div class="span6">
+            <h3>Sales of Livestock and Fishery</h3>
+            <address>
+              <strong>ABG Fishery and Livestock</strong><br>
+              Thet Kal Kone Wa Fishery Zone<br>
+              Kayan, Yangon, Myanmar<br>
+              <a href="mailto:#">sales@abg-group.com</a>
+            </address>
+          </div>
+          <div class="span6">
+            <h3>For Investment and Partnership</h3>
+            <address>
+              <strong>Kyaw Phyo (Business Development Director)</strong><br>
+              (+65) 9140 6154<br>
+              (+65) 9459 4553<br>
+              <a href="mailto:#">kyawphyo@abggroup.com</a>
+            </address>
+          </div>
         </div>
       </div>
       
@@ -120,15 +104,5 @@
     <!-- javascript -->
     <script src="js/jquery-latest.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script>
-    $(function(){
-      $('.slideshow img:gt(0)').hide();
-      setInterval(function(){
-        $('.slideshow :first-child').fadeOut()
-           .next('img').fadeIn()
-           .end().appendTo('.slideshow');}, 
-        3000);
-    });
-    </script>
   </body>
 </html>

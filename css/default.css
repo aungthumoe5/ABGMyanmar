@@ -1,0 +1,21 @@
+body
+{
+padding-top: 30px;
+padding-bottom: 40px;
+}
+
+.content
+{
+position:relative;
+min-height: 500px;
+}
+.content p
+{
+text-align: justify;
+}
+
+.nav.nav-tabs.pull-right
+{
+border-bottom: 1px solid #DDD;
+padding-left: 415px;
+}
