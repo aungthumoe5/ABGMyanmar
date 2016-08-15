@@ -104,32 +104,19 @@
 
     <script type="text/javascript">
     function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'),{});
+        var myLatLng = {lat: -25.363, lng: 131.044};
 
-        var marker1 = new google.maps.Marker({
-          map: map,
-          position: {lat: 16.75492722095852, lng: 96.5234649181366},
-          title: 'Thongwa'
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: myLatLng
         });
 
-        var marker2 = new google.maps.Marker({
+        var marker = new google.maps.Marker({
+          position: myLatLng,
           map: map,
-          position: {lat: 16.903822227235967, lng: 96.56296849250793},
-          title: 'Khayan'
+          title: 'Hello World!'
         });
-
-        var marker3 = new google.maps.Marker({
-          map: map,
-          position: {lat: 16.800145175216553, lng: 96.14999413490295},
-          title: 'Yangon'
-        });
-
-        var marker4 = new google.maps.Marker({
-          map: map,
-          position: {lat: 16.669248695183846, lng: 96.25215411186218},
-          title: 'Thilawa'
-        });
-}
+      }
     </script>
 
     <script async defer
