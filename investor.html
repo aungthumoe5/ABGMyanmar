@@ -62,7 +62,7 @@
         <hr>
         
         <div class="media">
-          <div class="media-object pull-left img-polaroid" id="map"></div>
+          <div class="media-object pull-left img-polaroid" id="map_div"></div>
           <div class="media-body">
             <p>Situated just close to Thilawa Special Economic Zone (TSEZ), which is the second biggest economic zone to be developed in Myanmar, ABG's businesses are at the miximum potential of growth.</p>
           </div>
@@ -104,15 +104,15 @@
 
     <script type="text/javascript">
     function initMap() {
-        var myLatLng = {lat: -25.363, lng: 131.044};
+        var latlng1 = {lat: -25.363, lng: 131.044};
 
-        var map = new google.maps.Map(document.getElementById('map'), {
+        var map = new google.maps.Map(document.getElementById('map_div'), {
           zoom: 4,
-          center: myLatLng
+          center: latlng1
         });
 
-        var marker = new google.maps.Marker({
-          position: myLatLng,
+        var marker1 = new google.maps.Marker({
+          position: latlng1,
           map: map,
           title: 'Hello World!'
         });
