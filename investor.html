@@ -62,7 +62,7 @@
         <hr>
         
         <div class="media">
-          <div class="media-object pull-left img-polaroid" id="map_div"></div>
+          <div class="media-object pull-left img-polaroid" id="map"></div>
           <div class="media-body">
             <p>Situated just close to Thilawa Special Economic Zone (TSEZ), which is the second biggest economic zone to be developed in Myanmar, ABG's businesses are at the miximum potential of growth.</p>
           </div>
@@ -101,22 +101,39 @@
     <!-- javascript -->
     <script src="jquery-latest.js"></script>
     <script src="bootstrap.js"></script>
-    <script type="text/javascript" src="jsapi"></script>
-    <script type="text/javascript">
-      google.load("visualization", "1", {packages:["map"]});
-      google.setOnLoadCallback(drawMap);
-      function drawMap() {
-        var data = google.visualization.arrayToDataTable([
-          ['Lat', 'Lon', 'Name'],
-          [16.75492722095852, 96.5234649181366, 'Thongwa'],
-          [16.903822227235967, 96.56296849250793, 'Khayan'],
-          [16.800145175216553, 96.14999413490295, 'Yangon'],
-          [16.669248695183846, 96.25215411186218, 'Thilawa']
-        ]);
 
-        var map = new google.visualization.Map(document.getElementById('map_div'));
-        map.draw(data, {'showTip': true});
-      }
+    <script type="text/javascript">
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'),{});
+
+        var marker1 = new google.maps.Marker({
+          map: map,
+          position: {lat: 16.75492722095852, lng: 96.5234649181366},
+          title: 'Thongwa'
+        });
+
+        var marker2 = new google.maps.Marker({
+          map: map,
+          position: {lat: 16.903822227235967, lng: 96.56296849250793},
+          title: 'Khayan'
+        });
+
+        var marker3 = new google.maps.Marker({
+          map: map,
+          position: {lat: 16.800145175216553, lng: 96.14999413490295},
+          title: 'Yangon'
+        });
+
+        var marker4 = new google.maps.Marker({
+          map: map,
+          position: {lat: 16.669248695183846, lng: 96.25215411186218},
+          title: 'Thilawa'
+        });
+}
+    </script>
+
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB59sQnjzQmM-geLwpZZk6ojOky_giqq18&callback=initMap">
     </script>
     
     <div id="body-end"></div>
