@@ -104,17 +104,42 @@
 
     <script type="text/javascript">
     function initMap() {
-        var latlng1 = {lat: -25.363, lng: 131.044};
+var latlng1 = {lat: 16.75492722095852, lng: 96.5234649181366};
+
+var latlng2 = {lat: 16.903822227235967, lng: 96.56296849250793};
+
+var latlng3 = {lat:
+16.800145175216553, lng: 96.149994134902950};
+
+var latlng4 = {lat: 16.669248695183846, lng:96.252154111862180};
 
         var map = new google.maps.Map(document.getElementById('map_div'), {
-          zoom: 4,
+          zoom: 10,
           center: latlng1
         });
 
-        var marker1 = new google.maps.Marker({
-          position: latlng1,
-          map: map,
-          title: 'Hello World!'
+var marker1 = new google.maps.Marker({
+position: latlng1,
+map: map,
+title: 'Thongwa'
+        });
+
+var marker2 = new google.maps.Marker({
+position: latlng2,
+map: map,
+title: 'Khayan'
+        });
+
+var marker3 = new google.maps.Marker({
+position: latlng3,
+map: map,
+title: 'Yangon'
+        });
+
+var marker4 = new google.maps.Marker({
+position: latlng4,
+map: map,
+title: 'Thilawa'
         });
       }
     </script>
