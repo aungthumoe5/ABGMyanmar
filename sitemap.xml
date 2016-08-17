@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="../../sitemap.xsl" type="text/xsl" media="all"?>
-<site>
-<page file="index.html" text="ABG Group" title="ABG Group">
-<page file="default.html" text="Home" title="ABG Group"/>
-<page file="about.html" text="About Us" title="AGB Group | About Us"/>
-<page file="products.html" text="Products and Services" title="ABG Group | Products &amp; Services"/>
-<page file="investor.html" text="Grow with Us" title="ABG Group | Grow With Us"/>
-<page file="contact.html" text="Contact Us" title="AGB Group | Contact Us"/>
-</page>
-</site>
+
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+
+<loc>http://www.abgmyanmar.com/index.html</loc>
+
+<loc>http://www.abgmyanmar.com/default.html</loc>
+
+<loc>http://www.abgmyanmar.com/about.html</loc>
+
+<loc>http://www.abgmyanmar.com/products.html</loc>
+
+<loc>http://www.abgmyanmar.com/investor.html</loc>
+
+<loc>http://www.abgmyanmar.com/contact.html</loc>
+
+</url>
+</urlset>
