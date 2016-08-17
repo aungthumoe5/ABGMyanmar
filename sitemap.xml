@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>http://www.abgmyanmar.com/index.html</loc></url>
 
-<loc>http://www.abgmyanmar.com/index.html</loc>
+<url><loc>http://www.abgmyanmar.com/default.html</loc><url/>
 
-<loc>http://www.abgmyanmar.com/default.html</loc>
+<url><loc>http://www.abgmyanmar.com/about.html</loc></url>
 
-<loc>http://www.abgmyanmar.com/about.html</loc>
+<url><loc>http://www.abgmyanmar.com/products.html</loc></url>
 
-<loc>http://www.abgmyanmar.com/products.html</loc>
+<url><loc>http://www.abgmyanmar.com/investor.html</loc></url>
 
-<loc>http://www.abgmyanmar.com/investor.html</loc>
-
-<loc>http://www.abgmyanmar.com/contact.html</loc>
-
-</url>
+<url><loc>http://www.abgmyanmar.com/contact.html</loc></url>
 </urlset>
